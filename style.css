@@ -1,0 +1,660 @@
+/* ================= GENERAL SETTINGS ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #061824;
+    color: white;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px 9%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #061524;
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00eaff;
+}
+
+
+/* Mobile menu icon */
+
+.menu-icon {
+    display: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    color: white;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 100vh;
+
+    padding: 120px 9% 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+/* Home text */
+
+.home-content {
+    max-width: 600px;
+}
+
+.intro {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+
+    margin-bottom: 5px;
+}
+
+.home-content h2 {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+.home-content h2 span {
+    color: #00eaff;
+}
+
+.description {
+    line-height: 1.6;
+
+    color: #d0d0d0;
+
+    max-width: 550px;
+}
+
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+    margin: 25px 0;
+
+    display: flex;
+
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #00eaff;
+
+    border-radius: 50%;
+
+    color: #00eaff;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #00eaff;
+
+    color: #061824;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 20px #00eaff;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #00eaff;
+
+    color: #061824;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #00eaff;
+
+    transform: scale(1.05);
+}
+
+
+/* ================= PROFILE IMAGE ================= */
+
+.home-image {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/*
+    The outer container creates
+    the glowing circular effect.
+*/
+
+.image-glow {
+    width: 320px;
+    height: 320px;
+
+    padding: 7px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        45deg,
+        #00eaff,
+        #ffffff,
+        #ff00cc,
+        #00eaff
+    );
+
+    animation: rotateGlow 4s linear infinite;
+
+    box-shadow:
+        0 0 30px #00eaff,
+        0 0 60px #ff00cc;
+}
+
+
+/* Profile image */
+
+.image-glow img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #061824;
+}
+
+
+/* Rotate glow */
+
+@keyframes rotateGlow {
+
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 100px 9%;
+}
+
+
+/* Section title */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+}
+
+.section-title span {
+    color: #00eaff;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about-content p {
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+    color: #d0d0d0;
+}
+
+
+/* ================= SERVICES ================= */
+
+.service-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.service-box {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: #0a2635;
+
+    border-radius: 15px;
+
+    border: 1px solid #123e52;
+
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+
+    border-color: #00eaff;
+
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+}
+
+.service-box i {
+    font-size: 40px;
+
+    color: #00eaff;
+
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    color: #ccc;
+
+    line-height: 1.6;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-container {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill h3 {
+    margin-bottom: 8px;
+}
+
+.progress {
+    width: 100%;
+
+    height: 10px;
+
+    background: #17313e;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+
+    background: #00eaff;
+
+    border-radius: 10px;
+}
+
+
+/* Skill percentages */
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 80%;
+}
+
+.javascript {
+    width: 65%;
+}
+
+.flutter {
+    width: 60%;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.project-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.project-box {
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: #0a2635;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+}
+
+.project-box i {
+    font-size: 40px;
+
+    color: #00eaff;
+
+    margin-bottom: 20px;
+}
+
+.project-box h3 {
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    color: #ccc;
+
+    margin-bottom: 20px;
+}
+
+.project-btn {
+    color: #00eaff;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact form {
+    max-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 8px;
+
+    background: #0a2635;
+
+    color: white;
+
+    font-size: 16px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #04111a;
+
+    color: #aaa;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 20px 5%;
+    }
+
+    .home {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .image-glow {
+        width: 280px;
+        height: 280px;
+    }
+
+    .service-container,
+    .project-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* Mobile phones */
+
+@media (max-width: 700px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        background: #061524;
+
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+
+    /* Hero becomes vertical */
+
+    .home {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding-top: 120px;
+    }
+
+    .home-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h2 {
+        font-size: 21px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .image-glow {
+        width: 240px;
+        height: 240px;
+    }
+
+
+    /* Services */
+
+    .service-container,
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+}

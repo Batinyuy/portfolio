@@ -2,10 +2,347 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>My Portfolio</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">Portfolio.</a>
+
+        <!-- Mobile menu button -->
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME SECTION ================= -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <p class="intro">Hello, It's Me</p>
+
+            <h1>Fanla Emmanuel Batinyuy</h1>
+
+            <h2>
+                And I'm a
+                <span id="typing-text"></span>
+            </h2>
+
+            <p class="description">
+                I'm a passionate developer who enjoys creating modern,
+                responsive and user-friendly websites and applications.
+                I love turning ideas into beautiful digital experiences.
+            </p>
+
+            <!-- Social media icons -->
+
+            <div class="social-icons">
+
+                <a href="https://www.facebook.com/fornyuy.emmanuel.1">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/bati_nyuy/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/emmanuel-batinyuy-b03815278/"> 
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/Batinyuy">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+            <a href="#about" class="btn">More About Me</a>
+
+        </div>
+
+
+        <!-- Profile image -->
+
+        <div class="home-image">
+
+            <div class="image-glow">
+
+                <img src="me.png" alt="Profile Picture">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                Hello! My name is Fanla Emmanuel Batinyuy. I am a passionate web developer
+                interested in building websites that are attractive,
+                responsive and easy to use.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and improving my programming
+                skills by creating practical projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES SECTION ================= -->
+
+    <section class="services" id="services">
+
+        <div class="section-title">
+            <h2>My <span>Services</span></h2>
+        </div>
+
+        <div class="service-container">
+
+            <div class="service-box">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    I create responsive and modern websites using
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="service-box">
+
+                <i class="fa-solid fa-mobile-screen"></i>
+
+                <h3>Responsive Design</h3>
+
+                <p>
+                    I design websites that work properly on phones,
+                    tablets and computers.
+                </p>
+
+            </div>
+
+
+            <div class="service-box">
+
+                <i class="fa-solid fa-paintbrush"></i>
+
+                <h3>UI Design</h3>
+
+                <p>
+                    I create clean and attractive user interfaces
+                    that are simple to navigate.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS SECTION ================= -->
+
+    <section class="skills" id="skills">
+
+        <div class="section-title">
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>HTML</h3>
+
+                <div class="progress">
+                    <div class="progress-bar html"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <h3>CSS</h3>
+
+                <div class="progress">
+                    <div class="progress-bar css"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+
+                <div class="progress">
+                    <div class="progress-bar javascript"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <h3>Flutter</h3>
+
+                <div class="progress">
+                    <div class="progress-bar flutter"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+
+    <section class="projects" id="projects">
+
+        <div class="section-title">
+            <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="project-container">
+
+            <div class="project-box">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio website.
+                </p>
+
+                <a href="#" class="project-btn">View Project</a>
+
+            </div>
+
+
+            <div class="project-box">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <h3>Online Store</h3>
+
+                <p>
+                    A simple e-commerce website for selling products.
+                </p>
+
+                <a href="#" class="project-btn">View Project</a>
+
+            </div>
+
+
+            <div class="project-box">
+
+                <i class="fa-solid fa-mobile-screen-button"></i>
+
+                <h3>Mobile App</h3>
+
+                <p>
+                    A mobile application created with Flutter.
+                </p>
+
+                <a href="#" class="project-btn">View Project</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <form id="contact-form">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Your Name"
+                   required>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Your Email"
+                   required>
+
+            <textarea id="message"
+                      rows="6"
+                      placeholder="Your Message"
+                      required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Fanla Emmanuel Batinyuy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Connect JavaScript -->
+
+    <script src="script.js"></script>
+
 </body>
 </html>
